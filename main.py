@@ -12,7 +12,7 @@ if st.button("풍선 날리기"):
 
 import streamlit as st
  
-tab1, tab2, tab3 = st.tabs(["첫 번째 탭", "두 번째 탭", "세 번째 탭"])
+tab1, tab2 = st.tabs(["첫 번째 탭", "두 번째 탭"])
  
 with tab1:
 	st.write("여기는 첫 번째 탭이에요.")
@@ -22,7 +22,3 @@ with tab1:
 with tab2:
 	숫자 = st.slider("숫자를 골라보세요", 0, 100)
 	st.write("고른 숫자:", 숫자)
-
-with tab3:
-	if st.button("풍선 날리기"):
-	st.balloons()
